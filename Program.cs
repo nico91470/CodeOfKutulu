@@ -211,7 +211,7 @@ public class Kutulu
 
     public static void GameLoop()
     {
-        var ret = string.Empty;
+        var ret = string.Empty; 
         List<Point> newPositions = new List<Point> {
                 new Point {x = game.Explorateurs[0].Position.x + 1, y = game.Explorateurs[0].Position.y},
                 new Point {x = game.Explorateurs[0].Position.x - 1, y = game.Explorateurs[0].Position.y},
@@ -239,7 +239,7 @@ public class Kutulu
                             bestPosition = newPosition;
                     }
                 }
-                ret = "MOVE " + bestPosition.x + " " + bestPosition.y + " Tentative d'esquive du slasher";
+                ret = "MOVE " + bestPosition.x + " " + bestPosition.y;
             }
         }
 
